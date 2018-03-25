@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src/Async.fs" />
+    <Compile Include="src/Results.fs" />
+    <Compile Include="src/models/ExchangeModel.fs" />
+    <Compile Include="src/models/JobModel.fs" />
+    <Compile Include="src/models/ReportModel.fs" />
+    <Compile Include="src/Json.fs" />
+    <Compile Include="src/controllers/Controller.fs" />
+    <Compile Include="src/controllers/ExchangeController.fs" />
+    <Compile Include="src/controllers/JobController.fs" />
+    <Compile Include="src/controllers/ReportController.fs" />
+    <Compile Include="src/services/Sql.fs" />
+    <Compile Include="src/services/SqlEvolutions.fs" />
+    <Compile Include="src/services/ExchangeService.fs" />
+    <Compile Include="src/services/JobService.fs" />
+    <Compile Include="src/services/ReportService.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="npgsql" Version="3.2.7" />
+    <PackageReference Include="Suave" Version="2.2.1" />
+  </ItemGroup>
+</Project>
