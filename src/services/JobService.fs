@@ -42,6 +42,7 @@ let private listQuery whereClause =
     from jobs
     where %s
     and subject like :subject
+    order by priority desc
     offset :offset
     limit :limit
   """
